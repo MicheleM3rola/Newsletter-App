@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .bg {
+        background-image: url("img/bg.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <title>Newsletter</title>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="overlay"></div>
+      <div class="form">
+        <img src="img/icons8-optinmonster-128.png" alt="Logo" />
+        <h2 class="title">Newsletter</h2>
+        <form action="/" method="POST" class="flexForm">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your Name"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Enter your Last Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
